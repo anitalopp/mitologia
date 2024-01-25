@@ -1,19 +1,81 @@
-header {
-    border-radius: 0.5rem;
-    background-color: white;
-    overflow: hidden; 
+@font-face {
+    font-family: 'greek';
+    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');  
+}
+
+@font-face {
+    font-family: 'greek2';
+    src: url('../fonts/greek.2/CapitalisTypOasis.ttf') format('truetype');
 }
 
 body {
     background-color: #1F2F16;
+    margin: 0;
 }
 
-img {
-    width: 13%;
-    float: left; 
-    margin-right: 10px; 
+header, footer {
+    border-radius: 0.5rem;
+    background-color: rgb(250, 244, 232);
 }
 
-h1 {
-    float: left; 
+header {
+    overflow: hidden;
+    height: 170px;
 }
+
+#logo {
+    float: left;
+    height: 100%;
+    margin-right: 15px;
+    display: flex;
+}
+
+#logo img {
+    height: 100%;
+    width: auto;
+}
+
+#titulo {
+    float: left;
+    border-bottom: 5px;
+    font-family: 'greek';
+    font-size: 53px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    height: auto;
+    margin: 6px 5%;
+    padding: 20px;
+    display: flex;
+}
+
+#textoPie {
+    background-color: rgb(231, 219, 195);
+    text-align: left;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 50px;
+}
+
+.tipografia {
+    font-family: 'greek2';
+    margin: 0;
+}
+
+#rrss-container {
+    display: flex;
+    margin: 0;
+}
+
+.rrss {
+    margin: 5px;
+    width: 25px;
+}
+
