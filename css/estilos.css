@@ -1,0 +1,19 @@
+header {
+    border-radius: 0.5rem;
+    background-color: white;
+    overflow: hidden; 
+}
+
+body {
+    background-color: #1F2F16;
+}
+
+img {
+    width: 13%;
+    float: left; 
+    margin-right: 10px; 
+}
+
+h1 {
+    float: left; 
+}
