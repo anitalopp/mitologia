@@ -45,14 +45,15 @@ header {
 footer {
     position: fixed;
     bottom: 0;
-    width: 90%;
+    width: 30%;
     height: auto;
-    margin: 6px 5%;
+    margin-left: 35%;
     padding: 20px;
     display: flex;
 }
 
 #textoPie {
+    border-radius: 0.5rem;
     background-color: rgb(231, 219, 195);
     text-align: left;
     display: flex;
@@ -60,8 +61,8 @@ footer {
     align-items: center;
     max-width: 250px;
     width: 100%;
-    padding: 20px;
-    margin-left: 50px;
+    padding: 15px;
+    margin-left: 20px;
 }
 
 .tipografia {
@@ -75,7 +76,7 @@ footer {
 }
 
 .rrss {
-    margin: 5px;
-    width: 25px;
+    margin-right: 20px;
+    width: 35px;
 }
 
