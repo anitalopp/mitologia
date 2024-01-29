@@ -14,27 +14,21 @@
 }
 
 body {
-    background-color: #1F2F16;
+    background-color: #5a7684;
     margin: 0;
     padding: 0;
 }
 
-header, footer {
-    border-radius: 0.8rem;
-    background-color: rgb(250, 244, 232);
-    
-}
-
 header {
+    border-radius: 0.8rem;   
     overflow: hidden;
     height: 90px;
     width: 50%;
     position: sticky;
     top: 0;
-    background-color: rgb(250, 244, 232);
+    background-color: rgb(255, 244, 223);
     z-index: 1000;
     margin: 10px auto; 
-
 }
 
 #logo {
@@ -81,6 +75,9 @@ footer {
     margin-left: 35%;
     padding: 6px;
     display: flex;
+    background-color: rgb(250, 244, 232);
+    border-radius: 0.8rem;   
+
 }
 
 #rrss-container {
@@ -107,5 +104,66 @@ footer {
     text-align: center;
     margin-left: 1%;
     padding: 10px;
+}
+
+#menu {
+    background-color:  rgb(250, 244, 232);
+    width: 70%;
+    height: 55px;
+    font-family: 'greek2';
+    margin: 0;
+    border-top: 2px solid #fdf398; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+}
+
+#menuDioses, #menuNoticias, #menuAccion {
+    width: 33.33%; 
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    border-right: 2px solid #fdf398;
+}
+
+#menuAccion {
+    border-right: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease; 
+}
+
+#menu a:hover {
+    color: #ff9900; 
+}
+
+main {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#anuncioIzq img {
+    width: 10%;
+    float: left;
+}
+
+#anuncioDcha img {
+    width: 10%;
+    float: right;
+}
+
+#info1 {
+    text-align: center;
+    background-image: url(../img/fotos/diosesolimpo2.jpg);    
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;   
 }
 
