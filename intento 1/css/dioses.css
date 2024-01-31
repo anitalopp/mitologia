@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #000000 ;
 }
 
 
@@ -110,14 +110,9 @@ footer {
 
 main h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
-    margin-top: 80px;
-}
-
-main {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    max-width: 100%;
+   
 }
 
 .dioses {
@@ -130,7 +125,7 @@ main {
 }
 
 .dioses img {
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
@@ -143,6 +138,8 @@ main {
     padding: 10px;
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
+    color: azure;
+
 }
 
 .dioses:hover .info {

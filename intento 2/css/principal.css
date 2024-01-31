@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: 'greek';
+    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'greek2';
+    src: url('../fonts/greek.2/CapitalisTypOasis.ttf') format('truetype');
+}
+
+body {
+    background-color: black;
+}
+
+

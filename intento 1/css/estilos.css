@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'greek';
-    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');  
+    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -14,21 +14,19 @@
 }
 
 body {
-    background-color: #5a7684;
-    margin: 0;
-    padding: 0;
+    background-color: #000000;
 }
 
 header {
-    border-radius: 0.8rem;   
-    overflow: hidden;
+    border-radius: 0.8rem;
     height: 90px;
     width: 50%;
     position: sticky;
     top: 0;
-    background-color: rgb(255, 244, 223);
+    background-color: rgb(66, 66, 66);
     z-index: 1000;
-    margin: 10px auto; 
+    margin: 10px auto;
+    color: azure;
 }
 
 #logo {
@@ -53,7 +51,7 @@ header {
 .dioses {
     width: 23%;
     float: right;
-    margin-top: 2%
+    margin-top: 2%;
 }
 
 #dioses-contenedor {
@@ -67,6 +65,40 @@ header {
     margin-right: 5%;
 }
 
+nav {
+    background-color: rgb(66, 66, 66);
+    width: 70%;
+    height: 55px;
+    font-family: 'greek2';
+    border-top: 0.5px solid #fdf398;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+}
+
+#menuDioses, #menuNoticias, #menuAccion {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    border-right: 0.1px solid #fdf398;
+}
+
+#menuAccion {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fdf398 ;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -75,9 +107,8 @@ footer {
     margin-left: 35%;
     padding: 6px;
     display: flex;
-    background-color: rgb(250, 244, 232);
-    border-radius: 0.8rem;   
-
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.8rem;
 }
 
 #rrss-container {
@@ -94,51 +125,16 @@ footer {
 
 #contacto, #rrss-container {
     border-radius: 0.5rem;
-    background-color: rgb(231, 219, 195);
+    background-color: rgb(141, 141, 141);
     width: 45%;
-
 }
 
 #contacto {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
     margin-left: 1%;
     padding: 10px;
-}
-
-#menu {
-    background-color:  rgb(250, 244, 232);
-    width: 70%;
-    height: 55px;
-    font-family: 'greek2';
-    margin: 0;
-    border-top: 2px solid #fdf398; 
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0.8rem;
-}
-
-#menuDioses, #menuNoticias, #menuAccion {
-    width: 33.33%; 
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    line-height: 55px;
-    border-right: 2px solid #fdf398;
-}
-
-#menuAccion {
-    border-right: none;
-}
-
-#menu a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s ease; 
-}
-
-#menu a:hover {
-    color: #ff9900; 
+    color: white;
 }
 
 main {
@@ -150,20 +146,33 @@ main {
     margin-top: 50px;
 }
 
-#anuncioIzq img {
+#anuncioIzq img,
+#anuncioDcha img {
     width: 10%;
     float: left;
 }
 
-#anuncioDcha img {
-    width: 10%;
-    float: right;
-}
-
 #info1 {
     text-align: center;
-    background-image: url(../img/fotos/diosesolimpo2.jpg);    
+    background-image: url(../img/fotos/index/1.png);
     background-repeat: no-repeat;
-    border-radius: 0.8rem;   
+    background-size:cover;
+    border-radius: 0.8rem;
+    color: aliceblue;
 }
 
+#correoFooter {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#correoFooter:hover {
+    color: yellow;
+}
+
+#menuDioses:hover,
+#menuNoticias:hover,
+#menuAccion:hover,
+#correoFooter:hover {
+    background-color: rgba(253, 243, 152, 0.2);
+}
