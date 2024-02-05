@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'greek';
-    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');  
+    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');
 }
 
 @font-face {
@@ -14,26 +14,19 @@
 }
 
 body {
-    background-color: #000000 ;
-}
-
-
-header, footer {
-    border-radius: 0.8rem;
-    background-color: rgb(250, 244, 232);
-    
+    background-color: #000000;
 }
 
 header {
-    overflow: hidden;
+    border-radius: 0.8rem;
     height: 90px;
     width: 50%;
     position: sticky;
     top: 0;
-    background-color: rgb(250, 244, 232);
+    background-color: rgb(66, 66, 66);
     z-index: 1000;
-    margin: 10px auto; 
-
+    margin: 10px auto;
+    color: azure;
 }
 
 #logo {
@@ -58,7 +51,7 @@ header {
 .dioses {
     width: 23%;
     float: right;
-    margin-top: 2%
+    margin-top: 2%;
 }
 
 #dioses-contenedor {
@@ -72,6 +65,42 @@ header {
     margin-right: 5%;
 }
 
+nav {
+    background-color: rgb(66, 66, 66);
+    width: 70%;
+    height: 55px;
+    font-family: 'greek2';
+    border-top: 0.5px solid #fdf398;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+    display: flex; /* ESTO */
+}
+
+#menuDioses, #menuNoticias, #menuAccion, #menuAlta {
+    width: 25%; /* ESTO */
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    border-right: 0.1px solid #fdf398;
+}
+
+#menuAlta {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    display: block; /* esto */
+}
+
+nav a:hover {
+    color: #fdf398 ;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -80,6 +109,8 @@ footer {
     margin-left: 35%;
     padding: 6px;
     display: flex;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.8rem;
 }
 
 #rrss-container {
@@ -96,18 +127,17 @@ footer {
 
 #contacto, #rrss-container {
     border-radius: 0.5rem;
-    background-color: rgb(231, 219, 195);
+    background-color: rgb(141, 141, 141);
     width: 45%;
-
 }
 
 #contacto {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
     margin-left: 1%;
     padding: 10px;
+    color: white;
 }
-
 main h1 {
     text-align: center;
     color: rgb(255, 255, 255);

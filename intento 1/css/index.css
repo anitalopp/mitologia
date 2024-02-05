@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'greek';
+    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'greek2';
+    src: url('../fonts/greek.2/CapitalisTypOasis.ttf') format('truetype');
+}
+
+.tipografia {
+    font-family: 'greek2';
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+header {
+    border-radius: 0.8rem;
+    height: 90px;
+    width: 50%;
+    position: sticky;
+    top: 0;
+    background-color: rgb(66, 66, 66);
+    z-index: 1000;
+    margin: 10px auto;
+    color: azure;
+}
+
+#logo {
+    float: left;
+    height: 100%;
+    margin-right: 15px;
+    display: flex;
+    margin-left: 20px;
+}
+
+#logo img {
+    height: 100%;
+    width: auto;
+}
+
+#titulo {
+    float: left;
+    font-family: 'greek';
+    font-size: 30px;
+}
+
+.dioses {
+    width: 23%;
+    float: right;
+    margin-top: 2%;
+}
+
+#dioses-contenedor {
+    margin-right: 10%;
+}
+
+#templo {
+    margin-top: 1%;
+    width: 6.75%;
+    float: right;
+    margin-right: 5%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 30%;
+    height: 6%;
+    margin-left: 35%;
+    padding: 6px;
+    display: flex;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.8rem;
+}
+
+#rrss-container {
+    width: 35%;
+    margin-right: 1%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.rrss {
+    width: 30px;
+    margin: 5%;
+}
+
+#contacto, #rrss-container {
+    border-radius: 0.5rem;
+    background-color: rgb(141, 141, 141);
+    width: 45%;
+}
+
+#contacto {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1%;
+    padding: 10px;
+    color: white;
+}
+
+nav {
+    background-color: rgb(66, 66, 66);
+    width: 70%;
+    height: 55px;
+    font-family: 'greek2';
+    border-top: 0.5px solid #fdf398;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+    display: flex; /* ESTO */
+}
+
+#menuDioses, #menuNoticias, #menuAccion, #menuAlta {
+    width: 25%; 
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    border-right: 0.1px solid #fdf398;
+}
+
+#menuAlta {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    display: block; /* esto */
+}
+
+nav a:hover {
+    color: #fdf398 ;
+}
+
+main {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#anuncioIzq img,
+#anuncioDcha img {
+    width: 10%;
+    float: left;
+}
+
+#menuDioses:hover,
+#menuNoticias:hover,
+#menuAccion:hover,
+#correoFooter:hover {
+    background-color: rgba(253, 243, 152, 0.2);
+}
+
+main {
+text-align: center;
+}
+
+video {
+    margin-top: 50px;
+}
+
+#informacion img {
+    float: right;
+}
+
+#informacion {
+    color: azure;
+    padding: 15px;
+    background-color: #252525;
+    border: 0.1px solid #494949;
+    border-radius: 0.8rem;
+}
+
+#informacion h1 {
+    color: #fdf398;
+
+}
+
+#informacion img {
+    width: 60%;
+}
+
