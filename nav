@@ -1,0 +1,36 @@
+
+nav {
+    background-color: rgb(66, 66, 66);
+    width: 70%;
+    height: 55px;
+    font-family: 'greek2';
+    border-top: 0.5px solid #fdf398;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+    display: flex; /* ESTO */
+}
+
+#menuDioses, #menuNoticias, #menuAccion, #menuAlta {
+    width: 25%; 
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    border-right: 0.1px solid #fdf398;
+}
+
+#menuAlta {
+    border-right: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    display: block; /* esto */
+}
+
+nav a:hover {
+    color: #fdf398 ;
+}

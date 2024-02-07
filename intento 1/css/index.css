@@ -17,17 +17,19 @@ body {
     background-color: #000000;
 }
 
-header {
+header {    
     border-radius: 0.8rem;
     height: 90px;
     width: 50%;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: rgb(66, 66, 66);
     z-index: 1000;
     margin: 10px auto;
     color: azure;
 }
+
+
 
 #logo {
     float: left;
@@ -104,6 +106,7 @@ footer {
 }
 
 nav {
+    margin-top: 120px; 
     background-color: rgb(66, 66, 66);
     width: 70%;
     height: 55px;
@@ -115,7 +118,7 @@ nav {
     display: flex; /* ESTO */
 }
 
-#menuDioses, #menuNoticias, #menuAccion, #menuAlta {
+#menuDioses, #menuNoticias, #menuMitos, #menuFormulario {
     width: 25%; 
     box-sizing: border-box;
     float: left;
@@ -124,7 +127,7 @@ nav {
     border-right: 0.1px solid #fdf398;
 }
 
-#menuAlta {
+#menuFormulario {
     border-right: none;
 }
 
@@ -132,7 +135,7 @@ nav a {
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s ease;
-    display: block; /* esto */
+    display: block; 
 }
 
 nav a:hover {
@@ -145,7 +148,8 @@ main {
     margin-right: 10%;
     float: left;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 50px; 
+    margin-bottom: 60px; 
 }
 
 #anuncioIzq img,
@@ -156,7 +160,8 @@ main {
 
 #menuDioses:hover,
 #menuNoticias:hover,
-#menuAccion:hover,
+#menuMitos:hover,
+#menuFormulario:hover,
 #correoFooter:hover {
     background-color: rgba(253, 243, 152, 0.2);
 }
@@ -167,6 +172,8 @@ text-align: center;
 
 video {
     margin-top: 50px;
+    width: 640px;
+    height: 360px;
 }
 
 #informacion img {
@@ -186,7 +193,42 @@ video {
 
 }
 
-#informacion img {
-    width: 60%;
+#informacion p {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif'
+}
+#redirigir {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 20px; 
 }
 
+.animaciones {
+    width: 30%; 
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex; 
+}
+
+.animaciones img {
+    width: 100%; 
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    color: azure; 
+}
+
+.animaciones:hover .info {
+    transform: translateY(0);
+}

@@ -1,0 +1,38 @@
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 30%;
+    height: 6%;
+    margin-left: 35%;
+    padding: 6px;
+    display: flex;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.8rem;
+}
+
+#rrss-container {
+    width: 35%;
+    margin-right: 1%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.rrss {
+    width: 30px;
+    margin: 5%;
+}
+
+#contacto, #rrss-container {
+    border-radius: 0.5rem;
+    background-color: rgb(141, 141, 141);
+    width: 45%;
+}
+
+#contacto {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1%;
+    padding: 10px;
+    color: white;
+}
