@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'greek';
+    src: url('../fonts/greek/DalekPinpointBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'greek2';
+    src: url('../fonts/greek.2/CapitalisTypOasis.ttf') format('truetype');
+}
+
+.tipografia {
+    font-family: 'greek2';
+    margin: 0;
+}
+
+body {
+    background-color: #141414;
+    margin: 0; 
+    padding: 0; 
+}
+
+#header-contenedor{    
+    border-radius: 0.8rem;
+    height: 90px;
+    width: 50%;
+    top: 0;
+    background-color: rgb(66, 66, 66);
+    margin: 10px auto;
+    color: azure;
+} 
+
+header {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    float: left;
+    height: 100%;
+    margin-right: 15px;
+    display: flex;
+    margin-left: 20px;
+}
+
+#logo img {
+    height: 100%;
+    width: auto;
+}
+
+#titulo {
+    float: left;
+    font-family: 'greek';
+    font-size: 30px;
+}
+
+.dioses {
+    width: 23%;
+    float: right;
+    margin-top: 4%;
+}
+
+#dioses-contenedor {
+    margin-right: 10%;
+}
+
+#templo {
+    margin-top: 3%;
+    width: 6.75%;
+    float: right;
+    margin-right: 5%;
+}
+
+main {
+    margin-top: 130px;
+}
+
+#presentacionDioses {
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+#arbolGenealogico img {
+    width: 50%;
+    margin-left: 25%;
+    position: relative;
+}
+.imagen-contenedor {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.imagen-contenedor:hover img {
+    transform: scale(1.1);
+}
+
+.informacion {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 1; 
+}
+
+.imagen-contenedor:hover .informacion {
+    transform: translateY(0);
+}
+
+.informacion p {
+    margin: 0;
+}
+
+.imagen-separada {
+    width: 300px;
+    text-align: center;
+}
+
+main h1 {
+    text-align: center;
+    color: azure;
+    margin-top: 5%;
+}
