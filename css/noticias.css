@@ -18,6 +18,11 @@
     src: url(../fonts/greek.4/Roman\ SD.ttf) format(truetype);
 }
 
+.tipografia2 {
+    font-family: 'greek2';
+    margin: 0;
+}
+
 .tipografia3 {
     font-family: 'greek3';
     margin: 0;
@@ -108,21 +113,28 @@ main {
     margin-right: 5%;
 }
 
-#noticia1, #noticia2, #noticia3 {
+#noticia1, #noticia2, #noticia3, #noticia4, #noticia5 {
     display: flex;
     flex-direction: column; 
     align-items: center; 
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
-#noticia1 img, #noticia2 img, #noticia3 img {
+#noticia1 img, #noticia2 img, #noticia3 img, #noticia4 img, #noticia5 img {
     width: 40%; 
     margin-top: 20px;
     margin-bottom: 20px; 
     border: 2px solid #ddd; 
     border-radius: 8px;
+    transition: transform 0.3s ease; 
+
 }
 
+#noticia1:hover img, #noticia2:hover img, #noticia3:hover img, #noticia4:hover img, #noticia5:hover img {  
+    transform: scale(1.1); 
+}
+  
 main h1 {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -130,11 +142,11 @@ main h1 {
 }
 
 
-#noticia1, #noticia3 {
+#noticia1, #noticia3, #noticia5, .anuncios {
     background-color: rgb(231, 231, 231);
 }
 
-#noticia2 {
+#noticia2, #noticia4 {
     background-color: #ffffff;
 }
 
@@ -151,3 +163,66 @@ main h1 {
     color: darkblue; 
 }
 
+.anuncios {
+    text-align: center;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 30%;
+    height: 6%;
+    margin-left: 35%;
+    padding: 6px;
+    display: flex;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.8rem;
+}
+
+#rrss-container {
+    width: 35%;
+    margin-right: 1%;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.rrss {
+    width: 30px;
+    margin: 5%;
+}
+
+#contacto, #rrss-container {
+    border-radius: 0.5rem;
+    background-color: rgb(141, 141, 141);
+    width: 45%;
+}
+
+#contacto {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 1%;
+    padding: 10px;
+    color: white;
+}
+
+.boton-contenedor {
+    margin-bottom: 2%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+button {
+    background-color: #3b3b3b; 
+    color: white;
+    padding: 10px 20px; 
+    text-align: center; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 7px; 
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #45a049;
+}

@@ -41,7 +41,7 @@
       <input type="text" id="dni" name="dni" pattern="\d{8}[A-Z]" placeholder="12345678 + LETRA" required>
     
       <label for="direccion">DIRECCION *</label>
-      <input type="text" id="direccion" name="direccion" placeholder="C/NombreCalle Nºnum PletraPuerta" required>
+      <input type="text" id="direccion" name="direccion" pattern="C\/ [a-zA-Z]+ \d+$" placeholder="C/NombreCalle Nºnum PletraPuerta" required>
     
       <label for="ciudad">CIUDAD *</label>
       <input type="text" id="ciudad" name="ciudad" required>
@@ -59,7 +59,7 @@
       <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="correo@correo.es">
     
       <label for="contrasena">CONTRASEÑA *</label>
-      <input type="password" id="contrasena" name="contrasena" pattern="^[a-zA-Z]{1,7}[a-zA-Z0-9]{5}&\d{2}$" placeholder="Incluye mayúsculas, minúsculas y dos números" required>
+      <input type="password" id="contrasena" name="contrasena" pattern="^[a-zA-Z]{1,7}\d¨{1,5}$" placeholder="Incluye mayúsculas, minúsculas y dos números" required>
     
       <label for="sexo">SEXO</label>
       <select id="sexo" name="sexo">
